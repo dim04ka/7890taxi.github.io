@@ -149,6 +149,12 @@
             padding-bottom: 10px;
         }
 
+        &-location {
+            background-image: url(../src/img/location.svg);
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+        }
+
     }
 
     &__links {
@@ -230,6 +236,34 @@
         flex-direction: column;
         margin-right: 35px;
         flex-wrap: wrap;
+
+        input[type=radio] {
+            position: absolute;
+            z-index: -1;
+        }
+
+        label {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            cursor: pointer;
+
+        }
+
+        label:before {
+            content: "";
+            width: 11px;
+            height: 11px;
+            background: #C4C4C4;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 7px;
+        }
+
+        label:checked .oplata__many label:before {
+            background: red;
+        }
     }
 }
 

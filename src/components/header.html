@@ -34,8 +34,8 @@
           <div class="form__details">
             <form action="">
                 <fieldset>
-                    <input type="text" class="form__input" placeholder="Откуда">
-                    <input type="text" class="form__input" placeholder="Куда">
+                    <input type="text" class="form__input form__input-location" placeholder="Откуда">
+                    <input type="text" class="form__input form__input-location" placeholder="Куда">
                     <input type="text" class="form__input" placeholder="Телефон">
                 </fieldset>
                 <div class="form__rblock">
@@ -44,8 +44,9 @@
                     </div>
                     <div class="oplata">
                       <div class="oplata__many">
+                        
                         <label><input type="radio" name="many" value="card" disabled>Оплата картой </label>
-                        <label><input type="radio" name="many" value="nal" checked>Оплата наличными </label>
+                        <label for="many"><input type="radio" name="many" value="nal" checked>Оплата наличными </label>
                       </div>
                       <div class="oplata__car">
                           <label><input type="radio" name="car" value="light" checked>Легкий</label>
