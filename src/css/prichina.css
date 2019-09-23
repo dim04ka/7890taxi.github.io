@@ -1,0 +1,147 @@
+.prichina {
+    background-image: url(/src/img/33576-min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 100px 0;
+
+    &__wrap {
+        position: relative;
+        margin-bottom: 50px;
+    
+        &:before{
+          content: "";
+          width: 75px;
+          height: 3px;
+          background: #FFAA00;
+          display: block;
+          margin: 0 auto;
+          top: -8px;
+          position: relative;
+          z-index: 10;
+        }
+      }
+      
+      &__bg {
+        background: url(/src/img/sky1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 220px;
+        height: 130px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translate(85px,-55px);
+        z-index: 5;
+      }
+
+      &__title {
+        font-family: Arsenal;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+        text-align: center;
+        color: #000000;
+        position: relative;
+        z-index: 10;
+
+        @media(max-width: 480px) {
+          font-size: 46px;
+        }
+
+        &:before {
+          content: "";
+          width: 150px;
+          height: 3px;
+          background: #FFAA00;
+          display: block;
+          margin: 0 auto;
+        }
+
+
+    }
+
+    
+}
+
+.prichina {
+
+    &__blocks {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1000px;
+      margin: 0 auto;
+
+      @media(max-width: 1015px) {
+          width: 600px;
+      }
+
+      @media(max-width: 766px) {
+        width: 310px;
+        flex-direction: column;
+        height: 755px;
+        align-content: center;
+      }
+    }
+
+    &__item {
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+
+      @media(max-width: 766px) {
+        width: 150px;
+        height: 150px;
+      }
+
+      &-yellow {
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+        background: #FFAA00;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+
+        @media(max-width: 766px) {
+          padding-bottom: 20px;
+        }
+      }
+
+      &-icon {
+        background-image: url(/src/img/card.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100px;
+        height: 99px;
+        margin: 0 auto;
+
+        &-buisnes {
+          background-image: url(/src/img/man.png);
+        }
+
+        &-help {
+          background-image: url(/src/img/help.png);
+          
+        }
+
+
+      }
+
+      &-text {
+        font-weight: bold;
+        font-size: 22px;
+        color: black;
+        text-align: center;
+
+        @media(max-width: 766px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+
+}

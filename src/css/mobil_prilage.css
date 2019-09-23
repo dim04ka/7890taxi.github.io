@@ -1,0 +1,205 @@
+.mobil_prilage {
+
+    padding: 200px 0 50px;
+    position: relative;
+
+    @media(max-width: 768px) {
+        padding: 80px 0;
+    }
+
+    &__bg {
+        background-image: url(/src/img/bg_mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 1304px;
+        height: 653px;
+        background-size: cover;
+        position: absolute;
+        top: 80px;
+        right: 40%;
+
+        @media(max-width: 768px){
+            display: none;
+        }
+    }
+
+    &__wrap {
+        position: relative;
+        margin-bottom: 50px;
+    
+        &:before{
+          content: "";
+          width: 75px;
+          height: 3px;
+          background: #FFAA00;
+          display: block;
+          top: -8px;
+          position: relative;
+          z-index: 10;
+
+          @media(max-width: 768px) {
+            margin: 0 auto;
+          }
+        }
+      } 
+      
+      /* &__bg {
+        background: url('../img/sky1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 220px;
+        height: 130px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translate(85px,-55px);
+        z-index: 5;
+      }*/
+
+      &__title {
+        font-family: Arsenal;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 56px;
+        text-align: left;
+        color: #000000;
+        position: relative;
+        z-index: 10;
+
+        @media(max-width: 1024px) {
+            width: 600px;
+        }
+
+        @media(max-width: 768px) {
+            text-align: center;
+            width: auto;
+        }
+
+        @media(max-width: 480px) {
+          font-size: 46px;
+        }
+
+        &:before {
+          content: "";
+          width: 150px;
+          height: 3px;
+          background: #FFAA00;
+          display: block;
+
+          @media(max-width: 768px) {
+            margin: 0 auto;
+          }
+        }
+    }
+
+    &__disc{
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: left;
+        line-height: 25px;
+
+        @media(max-width: 768px) {
+            text-align: center;
+        }
+
+        @media(max-width: 480px) {
+            font-size: 16px;
+        }
+    }
+
+    &__ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 50px;
+
+        @media(max-width: 768px) {
+            text-align: left;
+            padding-left: 150px;
+        }
+
+        @media(max-width: 480px) {
+            padding-left: 95px;
+        }
+    }
+
+    &__li {
+        font-size: 22px;
+        color: black;
+
+        @media(max-width: 480px) {
+            font-size: 14px;
+        }
+
+        &:before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 50%;
+            background: #FFAA00;
+            margin: 0 20px 1px 0;
+
+            @media(max-width: 480px) {
+                width: 9px;
+                height: 9px;
+            }
+        }
+    }
+
+    &-content {
+        width: 60%;
+
+        @media(max-width: 768px) {
+
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__link {
+        background-image: url(/src/img/link_googleplay.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 187px;
+        height: 57px;
+        border-radius: 5px;
+        border: 2px solid #000000;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        
+        &-apple {
+            background-image: url(/src/img/Appstore.png);
+            width: 180px;
+            height: 61px;
+        }
+    }
+
+    &-img {
+        background-image: url(/src/img/mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        width: 448px;
+        height: auto;
+        margin-right: 10px;
+        transform: translateY(60px);
+
+        @media(max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+        padding: 80px 0 60px 80px;
+        position: relative;
+        background: white;
+
+        @media(max-width: 768px){
+            padding: 80px 0 60px 0px;
+        }
+    }
+}

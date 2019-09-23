@@ -1,0 +1,219 @@
+.footer_top {
+    background-image: url(/src/img/footer_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 518px;
+    position: relative;
+
+    @media(max-width: 766px) {
+        height: auto;
+        background-size: cover;
+    }
+
+}
+
+.footer {
+    display: flex;
+
+    @media(max-width: 766px) {
+        flex-wrap: wrap;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__lblock {
+        height: 500px;
+        position: absolute;
+        width: 2000px;
+        background: black;
+        top: -60px;
+        right: 50%;
+
+        
+        @media(max-width: 900px){
+            height: 490px;
+            width: 800px;
+        }
+
+        @media(max-width: 766px) {
+            right: 10%;
+            height: 470px;
+        }
+    }
+
+    &__block{
+        width: 50%;
+
+        &-black {
+            background: black;
+            padding: 50px 0 50px 80px;
+            color: white;
+
+            @media(max-width:1024px){
+                padding: 50px 0 50px 20px;
+            }
+
+            @media(max-width: 766px) {
+                width: 100%;
+                text-align: center;
+                background: transparent;
+            }
+
+            &:before {
+                content: "";
+                width: 500px;
+                height: 500px;
+                
+            }
+        }
+
+        &-right {
+            padding: 0px 0 0px 40px;
+
+            @media(max-width: 766px) {
+                padding: 50px 0;
+                width: 100%;
+            }
+
+            @media(max-width: 480px) {
+                padding: 20px 0;
+                width: 100%;
+            }
+        }
+
+    }
+
+    &__client {
+        font-weight: bold;
+        font-size: 24px;
+
+        @media(max-width: 900px){
+            font-size: 20px;
+        }
+        @media(max-width: 480px){
+            font-size: 16px;
+        }
+    }
+
+    &__tel {
+        margin-bottom: 35px;
+
+        a {
+            font-weight: bold;
+            font-size: 36px;
+            text-decoration: none;
+            color: white;
+            line-height: 32px;
+
+            @media(max-width: 900px){
+                font-size: 30px;
+            }
+
+            @media(max-width: 480px){
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__email {
+        font-size: 24px;
+        color: #8B8B8B;
+
+        @media(max-width: 900px){
+            font-size: 18px;
+        }
+
+        @media(max-width: 480px){
+            font-size: 16px;
+        }
+
+        a {
+            font-size: 24px;
+            color: #8B8B8B;
+            text-decoration: none;
+
+            @media(max-width: 900px){
+                font-size: 18px;
+            }
+
+            @media(max-width: 480px){
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    &__content {
+        font-size: 24px;
+        color: white;
+
+        
+        @media(max-width: 900px){
+            font-size: 20px;
+        }
+    }
+
+    &__disc a {
+        font-size: 24px;
+        color: #7A7A7A;
+        text-decoration: none;
+        
+        @media(max-width: 900px){
+            font-size: 18px;
+        }
+    }
+
+    &__logo {
+        background-image: url(/src/img/logo_footer.png);
+        background-repeat: no-repeat;
+        background-position: -15% 50%;
+        background-color: black;
+        width: 380px;
+        height: 120px;
+        margin-bottom: 40px;
+
+        @media(max-width: 900px){
+            width: 320px;
+            background-position: center;
+        }
+
+        @media(max-width: 766px){
+            width: 100%;
+            background-color: transparent;
+        }
+        
+        @media(max-width: 480px){
+            width: 95%;
+            background-size: cover;
+            height: 130px;
+        }
+    }
+
+    &__copy {
+
+        padding: 30px 0 20px;
+        text-align: center;
+
+        a {
+            color: #7A7A7A;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+
+    &__icons {
+        padding: 45px 0 90px;
+
+        @media(max-width: 480px) {
+            padding: 0 0 10px;
+            text-align: center;
+        }
+
+        a {
+            margin-right: 13px;
+        }
+    }
+}

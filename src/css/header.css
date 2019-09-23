@@ -1,0 +1,118 @@
+.topline {
+
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        display: none;
+
+        @media(max-width: 767px) {
+            display: flex;
+        }
+
+        span {
+            width: 28px;
+            height: 1px;
+            background: var(--white);
+            margin-bottom: 8px;
+        }
+    }
+
+    &__bg {
+        color: var(--white);
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 0;
+        align-items: center;
+    }
+
+    &__logo img {
+        width: 155px;
+        height: 98px;
+    }
+    
+    &__logo a {
+        font-family: Arsenal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 44px;
+        line-height: 52px;
+        text-decoration-line: none;
+        color: var(--white);
+        transition: all .3s;
+    }
+
+    &__logo {
+        @media(max-width: 766px)  {
+            padding-right: 75px;
+        }
+    }
+    
+    &__logo a:hover {
+        color: #F56B1E;
+    }
+
+    &__menu {
+        transition: all .3s;
+
+        @media(max-width: 767px) {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            
+        }
+
+        &-mobile {
+            display: flex;
+        }
+    }
+
+    &__menu a{
+        font-family: Arsenal;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: var(--white);
+        text-decoration-line: none;
+        padding: 10px 5px;
+        border: 1px solid transparent;
+        transition: all .3s;
+    }
+
+    &__menu a:last-child{
+        padding: 10px 0px;
+    }
+
+    &__menu a:hover {
+        border-bottom: 3px solid #FFAA00;
+    }
+
+    &__menu a:not(:last-child) {
+        margin-right: 30px;
+
+        @media(max-width: 1040px) {
+            margin-right: 5px;
+            padding: 10px 15px;
+        }
+    }
+
+    &__menu-active {
+        border: 1px solid #F56B1E;
+    }
+}
+
+
+.header_bg {
+    background-image: url('/src/img/bg_header2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 1000px;
+}
