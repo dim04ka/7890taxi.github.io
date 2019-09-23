@@ -226,4 +226,12 @@
         align-items: center;
         padding: 0 15px;
     }
+
+    form {
+
+        @media(max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

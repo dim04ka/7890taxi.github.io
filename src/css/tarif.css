@@ -1,11 +1,18 @@
 .tarif {
     padding: 200px 0;
-    /* background-image: url(../img/33576-4-min.png); */
+    height: 1000px;
+    background-image: url(/src/img/33576-4-min.png); 
     background-repeat: no-repeat;
     background-position: center bottom;
 
     @media(max-width: 1024px){
         padding: 50px 0 100px;
+    }
+    @media(max-width: 932px){
+        height: 1150px;
+    }
+    @media(max-width: 627px){
+        height: 1500px;
     }
 
     &__wrap {
@@ -108,6 +115,7 @@
 
 .price {
     padding: 20px 0;
+    overflow: hidden;
 
     &__item {
         width: 50%;
@@ -199,7 +207,7 @@
 }
 
 .hidden {
-    transition: all .3s;
+    transition: all 1s;
     overflow: hidden;
     height: 0px;
 }

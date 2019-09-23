@@ -44,19 +44,53 @@
           <a href="#" class="form__text-link">Применить промокод</a>
         </div>
         <div class="form__header">
-            <a href="#" class="form__header-link form__header-link-active">Заказать такси </a>
-            <a href="#" class="form__header-link">Предзаказ такси</a>
+            <a href="#" class="form__header-link">Заказать такси </a>
           </div>
           <div class="form__details">
-            <input type="text" class="form__input" placeholder="Откуда">
-            <input type="text" class="form__input" placeholder="Куда">
-            <input type="text" class="form__input" placeholder="Телефон">
-            <button type="submit" class="form__btn">Продолжить</button>
+            <form action="">
+                <fieldset>
+                    <input type="text" class="form__input" placeholder="Откуда">
+                    <input type="text" class="form__input" placeholder="Куда">
+                    <input type="text" class="form__input" placeholder="Телефон">
+                </fieldset>
+                <div class="form__rblock">
+                    <div>
+                        <input type="text" class="form__input" placeholder="Комментарий">
+                    </div>
+                    <div class="oplata">
+                      <div class="oplata__many">
+                        <label><input type="radio" name="many" value="card" disabled>Оплата картой </label>
+                        <label><input type="radio" name="many" value="nal" checked>Оплата наличными </label>
+                      </div>
+                      <div class="oplata__car">
+                          <label><input type="radio" name="car" value="light" checked>Легкий</label>
+                          <label><input type="radio" name="car" value="comfort">Комфорт</label>
+                          <label><input type="radio" name="car" value="miniven">Минивен</label>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="form__links">
+                    <div class="form__links__link">
+                        <a href="#">Добавить адрес</a>
+                        <a href="#">Ввести код на скидку</a>
+                        <a href="#">Карта</a>
+                    </div>
+                    <div class="form__links__summa">
+                      <div>от <span>3,3</span> руб</div>
+                      <button type="submit" class="form__btn">Продолжить</button>
+                    </div>
+                  </div>
+            </form>
           </div>
-          <div class="form__links">
-            <a href="#">Добавить адрес</a>
-            <a href="#">Ввести код на скидку</a>
-            <a href="#">Карта</a>
+
+          <div class="form__search">
+            <div class="form__search">Идет поиск водтеля</div>
+            <button>Отмена</button>
+          </div>
+          <div class="form__succes">
+            Ваш заказ принят. ВОт инфо  ..... Спасибо
+            <button>На главную</button>
           </div>
       </div>
     </div>
@@ -110,9 +144,11 @@
         </div>
         
         <div class="form__details form__workim">
-          <input type="text" class="workim__input" placeholder="Ваше имя">
-          <input type="text" class="workim__input" placeholder="Телефон">
-          <button type="submit" class="workim__btn">Отправить заявку</button>
+          <form action="">
+              <input type="text" class="workim__input" placeholder="Ваше имя" required>
+              <input type="text" class="workim__input" placeholder="Телефон" required>
+              <button type="submit" class="workim__btn">Отправить заявку</button>
+          </form>
         </div>
       </div>
       <div class="workim__right">
@@ -137,26 +173,51 @@
   <div class="prichina__blocks">
    
         <div class="prichina__item prichina__item-yellow">
-          <div class="prichina__item-icon"></div>
-          <div class="prichina__item-text">Оплата картой</div>
+          <div class="prichina__front">
+              <div class="prichina__item-icon"></div>
+              <div class="prichina__item-text">Оплата картой</div>
+          </div>
+          <div class="prichina__back">
+              <div class="prichina__item-text">Привяжите карту к приложению, рассчитайтесь ей в конце поездки</div>
+          </div>
         </div>
         <div class="prichina__item"></div>
         <div class="prichina__item prichina__item-yellow">
-            <div class="prichina__item-text">Детское кресло</div>
+            <div class="prichina__front">
+              <div class="prichina__item-text">Детское кресло</div>
+            </div>
+            <div class="prichina__back">
+                <div class="prichina__item-text">С заботой о самых самых маленьких пассажирах</div>
+            </div>
         </div>
         <div class="prichina__item"></div>
         <div class="prichina__item prichina__item-yellow">
-          <div class="prichina__item-icon prichina__item-icon-help"></div>
-          <div class="prichina__item-text">Помощь на дороге</div>
+            <div class="prichina__front">
+              <div class="prichina__item-icon prichina__item-icon-help"></div>
+              <div class="prichina__item-text">Помощь на дороге</div>
+            </div>
+            <div class="prichina__back">
+                <div class="prichina__item-text">"Быстрая помощь" в любой ситуации</div>
+            </div>
         </div>
         <div class="prichina__item"></div>
         <div class="prichina__item prichina__item-yellow">
-          <div class="prichina__item-text">Минивен</div>
+            <div class="prichina__front">
+               <div class="prichina__item-text">Минивен</div>
+            </div>
+            <div class="prichina__back">
+                <div class="prichina__item-text">7-ми, 8-ми, или 9-ти местный минивен всегда в Вашем распоряжении</div>
+            </div>
         </div>
         <div class="prichina__item"></div>
         <div class="prichina__item prichina__item-yellow">
-          <div class="prichina__item-icon prichina__item-icon-buisnes"></div>
-          <div class="prichina__item-text">Бизнес класс</div>
+            <div class="prichina__front">
+              <div class="prichina__item-icon prichina__item-icon-buisnes"></div>
+              <div class="prichina__item-text">Бизнес класс</div>
+            </div>
+            <div class="prichina__back">
+                <div class="prichina__item-text">Для самых важных событий в Вашей жизни</div>
+            </div>
         </div>
         <div class="prichina__item"></div>
       
