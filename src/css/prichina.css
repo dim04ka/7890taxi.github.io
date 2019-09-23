@@ -1,5 +1,5 @@
 .prichina {
-    background-image: url(/src/img/33576-min.png);
+    background-image: url(../src/img/33576-min.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -25,7 +25,7 @@
       }
       
       &__bg {
-        background: url(/src/img/sky1.png);
+        background: url(../src/img/sky1.png);
         background-repeat: no-repeat;
         background-position: center;
         width: 220px;
@@ -112,7 +112,7 @@
       }
 
       &-icon {
-        background-image: url(/src/img/card.png);
+        background-image: url(../src/img/card.png);
         background-repeat: no-repeat;
         background-position: center;
         width: 100px;
@@ -120,11 +120,11 @@
         margin: 0 auto;
 
         &-buisnes {
-          background-image: url(/src/img/man.png);
+          background-image: url(../src/img/man.png);
         }
 
         &-help {
-          background-image: url(/src/img/help.png);
+          background-image: url(../src/img/help.png);
           
         }
 

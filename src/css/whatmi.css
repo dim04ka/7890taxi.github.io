@@ -2,7 +2,7 @@
   padding: 100px 0;
   background: #f6f6f6;
   overflow: hidden;
-  background-image: url('/src/img/sky_bg.png');
+  background-image: url('../src/img/sky_bg.png');
   background-repeat: no-repeat;
   background-position: center bottom;
 
@@ -104,7 +104,7 @@
     }
 
     &-img1 {
-      background-image: url('/src/img/icon_1.png');
+      background-image: url('../src/img/icon_1.png');
       background-repeat: no-repeat;
       background-position: center;
       width: 111px;
@@ -119,7 +119,7 @@
     }
 
     &-img2 {
-      background-image: url('/src/img/icon_2.png');
+      background-image: url('../src/img/icon_2.png');
       background-repeat: no-repeat;
       background-position: center;
       width: 90px;
@@ -134,7 +134,7 @@
     }
 
     &-img3 {
-      background-image: url('/src/img/icon_3.png');
+      background-image: url('../src/img/icon_3.png');
       background-repeat: no-repeat;
       background-position: center;
       width: 125px;

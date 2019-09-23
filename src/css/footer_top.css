@@ -1,5 +1,5 @@
 .footer_top {
-    background-image: url(/src/img/footer_bg.png);
+    background-image: url(../src/img/footer_bg.png);
     background-repeat: no-repeat;
     background-position: center;
     height: 518px;
@@ -166,7 +166,7 @@
     }
 
     &__logo {
-        background-image: url(/src/img/logo_footer.png);
+        background-image: url(../src/img/logo_footer.png);
         background-repeat: no-repeat;
         background-position: -15% 50%;
         background-color: black;

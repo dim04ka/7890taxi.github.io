@@ -8,7 +8,7 @@
     }
 
     &__bg {
-        background-image: url(/src/img/bg_mobile.png);
+        background-image: url(../src/img/bg_mobile.png);
         background-repeat: no-repeat;
         background-position: center;
         width: 1304px;
@@ -159,7 +159,7 @@
     }
 
     &__link {
-        background-image: url(/src/img/link_googleplay.png);
+        background-image: url(../src/img/link_googleplay.png);
         background-repeat: no-repeat;
         background-position: center;
         width: 187px;
@@ -170,14 +170,14 @@
         margin-bottom: 10px;
         
         &-apple {
-            background-image: url(/src/img/Appstore.png);
+            background-image: url(../src/img/Appstore.png);
             width: 180px;
             height: 61px;
         }
     }
 
     &-img {
-        background-image: url(/src/img/mobile.png);
+        background-image: url(../src/img/mobile.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 100% 100%;

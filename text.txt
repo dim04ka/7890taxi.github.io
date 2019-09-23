@@ -1,3 +1,0 @@
-npm i
-gulp build
-gulp watch
