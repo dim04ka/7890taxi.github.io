@@ -1,15 +1,19 @@
 .tarif {
     padding: 200px 0;
     height: 1000px;
-    background-image: url(../src/img/33576-4-min.png); 
+    background-image: url(../src/img/sky_bg.png);
     background-repeat: no-repeat;
-    background-position: center bottom;
+    /* background-image: url(../src/img/33576-4-min.png);  */
+    /* background-position: center bottom; */
+    background-position: 50% 70%;
 
     @media(max-width: 1024px){
         padding: 50px 0 100px;
+        background-position: 50% 35%;
     }
     @media(max-width: 932px){
         height: 1150px;
+        
     }
     @media(max-width: 627px){
         height: 1500px;
